@@ -7,6 +7,18 @@
     <title>Javascript Project</title>
 </head>
 <body>
-    <img src="/table/img/WIN_20220128_15_50_30_Pro.jpg" alt="picture">
-</body>
+    <img id="picture" src="/table/img/WIN_20220128_15_50_30_Pro.jpg" alt="picture">
+    <button onclick="myImage(1)">change</button>
+    <button onclick="myImage(0)">back</button>
+    <script>
+        function myImage(sw) {
+            var pic;
+            if(sw == 0){
+                pic="/table/img/WIN_20220128_15_50_33_Pro (2).jpg"
+            }else{
+                pic="/table/img/WIN_20220128_15_50_30_Pro.jpg"
+            }
+            document.getElementById("picture").src =pic
+        }
+    </script></body>
 </html>
