@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,
+        table,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        th,
+        tr,
+        td {
+            color: rgb(31, 34, 27);
+        }
+
+        .olumide {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption id="demo">NAME</caption>
+        <tr>
+            <th colspan="2">olumide</th>
+            <th class="olumide">lekan</th>
+            <th>sunkanmi</th>
+
+        </tr>
+        <tr>
+            <td id="demo" onclick="myfunction()"> html</td>
+            <td>css</td>
+            <td>internal</td>
+            <td>english</td>
+        </tr>
+        <tr>
+            <td>pyton</td>
+            <td>table</td>
+            <td>row</td>
+            <td>c#</td>
+        </tr>
+    </table>
+
+
+
+
+    <table>
+        <caption>NAME OF PEOPLE IN MY FAMILY</caption>
+        <tr>
+            <th>name</th>
+            <th>occupation</th>
+            <th> family</th>
+        <tr>
+            <td>adeosun oluwatobiloba</td>
+            <td>bussiness administrator</td>
+            <td>single</td>
+        </tr>
+        <td>adeosun oluwole</td>
+        <td>web developer</td>
+        <td>married</td>
+        <tr>
+            <td>adeosun oluwafisayomi</td>
+            <td>stylelist</td>
+            <td>single</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>adeosun olumide</td>
+            <td>training web developer</td>
+            <td>single</td>
+        </tr>
+        <tr>
+            <td>adeosun ayomide</td>
+            <td>baby of the house</td>
+            <td>single</td>
+        </tr>
+    </table>
+
+    <img src="/table/pic_bulboff.gif" alt="" id="myImage">
+
+    <button onclick="light(1)">Light on</button>
+    <button onclick="light(0)">Light off</button>
+    <script>
+        function light(sw) {
+            var pic;
+            if(sw == 0){
+                pic="/table/pic_bulboff.gif"
+            }else{
+                pic = "/table/pic_bulbon.gif"
+            }
+            document.getElementById("myImage").src = pic;
+        }
+    </script>
+</body>
+
+</html>
